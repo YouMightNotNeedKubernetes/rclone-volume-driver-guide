@@ -1,3 +1,5 @@
+![rclone](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Rclone_wide_logo.svg/320px-Rclone_wide_logo.svg.png)
+
 # rclone-volume-driver-guide
 How to guide for using rclone as Docker Volume driver
 
