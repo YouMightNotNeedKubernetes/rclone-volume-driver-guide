@@ -87,4 +87,4 @@ docker plugin enable rclone
 ```
 
 > [!NOTE]
-> Before you can disable the plugin, you will need to stop/remove the container and volume that using the plugin.
+> Before you can disable the plugin, you will need to stop/remove any containers and volumes that are currently using the plugin.
