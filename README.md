@@ -3,11 +3,16 @@
 ## About
 How to guide for using rclone as Docker Volume driver
 
-## Step-by-step guide
+## Getting Started
+
+Here are a step-by-step guide on how to use `rclone/docker-volume-rclone` volume driver.
 
 1. Create `config` and `cache` directories
 2. Create `rclone.conf` configuration file
 3. Install `rclone/docker-volume-rclone` plugin
+
+> [!IMPORTANT]
+> You need to perform the above tasks on all nodes that required access to the volume driver.
 
 ### Create `config` and `cache` directories
 
@@ -38,7 +43,7 @@ location_constraint =
 server_side_encryption =
 ```
 
-## Install `rclone/docker-volume-rclone` plugin
+### Install `rclone/docker-volume-rclone` plugin
 
 Default install
 
@@ -63,3 +68,23 @@ docker plugin install rclone/docker-volume-rclone:amd64 \
   cache=/path/rclone/cache
 ```
 
+## Operation
+
+### Enable the plugin
+
+To enable the plugin, run:
+
+```sh
+docker plugin enable rclone
+```
+
+### Diable the plugin
+
+To diable the plugin, run:
+
+```sh
+docker plugin enable rclone
+```
+
+> [!NOTE]
+> Before you can disable the plugin, you will need to stop/remove the container and volume that using the plugin.
